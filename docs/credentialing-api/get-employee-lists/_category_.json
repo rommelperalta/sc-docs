@@ -1,0 +1,8 @@
+{
+    "label": "Get Employee Lists",
+    "position": 5,
+    "link": {
+        "type": "generated-index",
+        "description": "The Get Employee Lists endpoint allows clients to retrieve employee list information from the Credentialing API. This endpoint provides access to employee lists and their associated metadata."
+    }
+} 

@@ -1,0 +1,568 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  /* StreamlineVerify Brand Colors */
+  --sv-navy-blue: #1a365d;
+  --sv-dark-navy: #153450;
+  --sv-light-navy: #2d4a73;
+  --sv-orange: #f47d27;
+  --sv-orange-dark: #e5670c;
+  --sv-orange-light: #f68b42;
+  
+  /* Light Mode Colors */
+  --ifm-color-primary: #1a365d;
+  --ifm-color-primary-dark: #153450;
+  --ifm-color-primary-darker: #122e47;
+  --ifm-color-primary-darkest: #0f263c;
+  --ifm-color-primary-light: #2d4a73;
+  --ifm-color-primary-lighter: #325080;
+  --ifm-color-primary-lightest: #4662a3;
+  
+  /* Accent colors */
+  --ifm-color-secondary: #f47d27;
+  --ifm-link-color: #1a365d;
+  --ifm-link-hover-color: #153450;
+  
+  /* Background and text - improved contrast */
+  --ifm-background-color: #ffffff;
+  --ifm-background-surface-color: #f8f9fa;
+  --ifm-font-color-base: #1a202c;
+  --ifm-font-color-secondary: #2d3748;
+  --ifm-heading-color: #1a365d;
+  --ifm-color-content: #1a202c;
+  --ifm-color-content-secondary: #4a5568;
+  
+  /* Navbar - consistent across themes */
+  --ifm-navbar-background-color: #1a365d;
+  --ifm-navbar-text-color: #ffffff;
+  --ifm-navbar-link-color: #ffffff;
+  --ifm-navbar-link-hover-color: #f47d27;
+  
+  /* Code styling */
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(26, 54, 93, 0.1);
+  
+  /* JSON Code blocks - VS Code style */
+  --prism-background-color: #1e1e1e;
+  --prism-color: #d4d4d4;
+  
+  /* Hero banner */
+  --ifm-hero-background-color: #1a365d;
+  --ifm-hero-text-color: #ffffff;
+
+  /* VS Code/Cursor-style JSON Code Block Styling */
+  /* Light mode JSON styling */
+  --json-bg: #f8f8f8;
+  --json-text: #24292e;
+  --json-string: #032f62;
+  --json-number: #005cc5;
+  --json-boolean: #d73a49;
+  --json-null: #6f42c1;
+  --json-key: #e36209;
+  --json-punctuation: #24292e;
+}
+
+/* Dark Mode Colors */
+[data-theme='dark'] {
+  /* Primary colors - using orange for primary in dark mode */
+  --ifm-color-primary: #f47d27;
+  --ifm-color-primary-dark: #e5670c;
+  --ifm-color-primary-darker: #d8610b;
+  --ifm-color-primary-darkest: #b3500a;
+  --ifm-color-primary-light: #f68b42;
+  --ifm-color-primary-lighter: #f7914d;
+  --ifm-color-primary-lightest: #faa575;
+  
+  /* Background colors - dark navy theme */
+  --ifm-background-color: #1a202c;
+  --ifm-background-surface-color: #2d3748;
+  --ifm-color-content-secondary: #4a5568;
+  
+  /* Text colors for readability */
+  --ifm-font-color-base: #e2e8f0;
+  --ifm-font-color-secondary: #cbd5e0;
+  --ifm-heading-color: #f7fafc;
+  --ifm-link-color: #f47d27;
+  --ifm-link-hover-color: #f68b42;
+  --ifm-color-content: #e2e8f0;
+  
+  /* Navbar - same as light mode */
+  --ifm-navbar-background-color: #1a365d;
+  --ifm-navbar-text-color: #ffffff;
+  --ifm-navbar-link-color: #ffffff;
+  --ifm-navbar-link-hover-color: #f47d27;
+  --ifm-footer-background-color: #1a202c;
+  
+  /* Code blocks */
+  --docusaurus-highlighted-code-line-bg: rgba(244, 125, 39, 0.2);
+  --ifm-code-background: #2d3748;
+  
+  /* Cards and content blocks */
+  --ifm-card-background-color: #2d3748;
+  --ifm-card-border-radius: 8px;
+  
+  /* Sidebar */
+  --ifm-menu-color-background-active: rgba(244, 125, 39, 0.15);
+  --ifm-menu-color-background-hover: rgba(244, 125, 39, 0.1);
+
+  /* VS Code/Cursor-style JSON Code Block Styling */
+  /* Dark mode JSON styling */
+  --json-bg: #1e1e1e;
+  --json-text: #d4d4d4;
+  --json-string: #ce9178;
+  --json-number: #b5cea8;
+  --json-boolean: #569cd6;
+  --json-null: #569cd6;
+  --json-key: #9cdcfe;
+  --json-punctuation: #d4d4d4;
+}
+
+/* Navbar styling - consistent across themes */
+.navbar {
+  background-color: var(--sv-navy-blue) !important;
+  border-bottom: 2px solid var(--sv-orange);
+}
+
+.navbar__brand {
+  color: #ffffff !important;
+}
+
+.navbar__title {
+  color: #ffffff !important;
+  font-weight: 600;
+}
+
+.navbar__item .navbar__link {
+  color: #ffffff !important;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.navbar__item .navbar__link:hover {
+  color: var(--sv-orange) !important;
+}
+
+.navbar__item .navbar__link--active {
+  color: var(--sv-orange) !important;
+}
+
+/* Navbar icons - consistent white color */
+.navbar__item svg,
+.navbar__item .navbar__link svg,
+.navbar svg {
+  color: #ffffff !important;
+  fill: #ffffff !important;
+}
+
+.navbar__item svg:hover,
+.navbar__item .navbar__link:hover svg {
+  color: var(--sv-orange) !important;
+  fill: var(--sv-orange) !important;
+}
+
+/* Theme toggle icons */
+.react-toggle-track-check,
+.react-toggle-track-x {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 12px;
+  color: #ffffff !important;
+}
+
+.react-toggle-track-check {
+  left: 4px;
+}
+
+.react-toggle-track-x {
+  right: 4px;
+}
+
+/* Theme toggle button styling - consistent across themes */
+.navbar__item .react-toggle {
+  margin: 0 0.5rem;
+}
+
+/* Color mode toggle button - Multiple selector approaches for reliability */
+.navbar__item .navbar__link[class*="colorModeToggle"],
+.navbar__item button[class*="colorModeToggle"],
+.navbar__item .clean-btn[aria-label*="Switch"],
+.navbar__item .clean-btn[title*="Switch"],
+/* Fallback using the exact structure */
+.navbar__items--right [class*="colorModeToggle"] button,
+.navbar__items--right [class*="toggle"] button {
+  background: transparent !important;
+  border: 2px solid rgba(255, 255, 255, 0.3) !important;
+  border-radius: 20px !important;
+  padding: 6px 8px !important;
+  transition: all 0.2s ease !important;
+  color: #ffffff !important;
+  width: auto !important;
+  height: auto !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.navbar__item .navbar__link[class*="colorModeToggle"]:hover,
+.navbar__item button[class*="colorModeToggle"]:hover,
+.navbar__item .clean-btn[aria-label*="Switch"]:hover,
+.navbar__item .clean-btn[title*="Switch"]:hover,
+.navbar__items--right [class*="colorModeToggle"] button:hover,
+.navbar__items--right [class*="toggle"] button:hover {
+  background: rgba(244, 125, 39, 0.2) !important;
+  border-color: var(--sv-orange) !important;
+  color: #ffffff !important;
+}
+
+.navbar__item .navbar__link[class*="colorModeToggle"] svg,
+.navbar__item button[class*="colorModeToggle"] svg,
+.navbar__item .clean-btn[aria-label*="Switch"] svg,
+.navbar__item .clean-btn[title*="Switch"] svg,
+.navbar__items--right [class*="colorModeToggle"] button svg,
+.navbar__items--right [class*="toggle"] button svg {
+  color: #ffffff !important;
+  fill: #ffffff !important;
+  width: 20px !important;
+  height: 20px !important;
+}
+
+.navbar__item .navbar__link[class*="colorModeToggle"]:hover svg,
+.navbar__item button[class*="colorModeToggle"]:hover svg,
+.navbar__item .clean-btn[aria-label*="Switch"]:hover svg,
+.navbar__item .clean-btn[title*="Switch"]:hover svg,
+.navbar__items--right [class*="colorModeToggle"] button:hover svg,
+.navbar__items--right [class*="toggle"] button:hover svg {
+  color: #ffffff !important;
+  fill: #ffffff !important;
+}
+
+/* Ensure same styling in dark mode */
+[data-theme='dark'] .navbar__item .navbar__link[class*="colorModeToggle"],
+[data-theme='dark'] .navbar__item button[class*="colorModeToggle"],
+[data-theme='dark'] .navbar__item .clean-btn[aria-label*="Switch"],
+[data-theme='dark'] .navbar__item .clean-btn[title*="Switch"],
+[data-theme='dark'] .navbar__items--right [class*="colorModeToggle"] button,
+[data-theme='dark'] .navbar__items--right [class*="toggle"] button {
+  background: transparent !important;
+  border: 2px solid rgba(255, 255, 255, 0.3) !important;
+  border-radius: 20px !important;
+  padding: 6px 8px !important;
+  color: #ffffff !important;
+}
+
+[data-theme='dark'] .navbar__item .navbar__link[class*="colorModeToggle"]:hover,
+[data-theme='dark'] .navbar__item button[class*="colorModeToggle"]:hover,
+[data-theme='dark'] .navbar__item .clean-btn[aria-label*="Switch"]:hover,
+[data-theme='dark'] .navbar__item .clean-btn[title*="Switch"]:hover,
+[data-theme='dark'] .navbar__items--right [class*="colorModeToggle"] button:hover,
+[data-theme='dark'] .navbar__items--right [class*="toggle"] button:hover {
+  background: rgba(244, 125, 39, 0.2) !important;
+  border-color: var(--sv-orange) !important;
+  color: #ffffff !important;
+}
+
+[data-theme='dark'] .navbar__item .navbar__link[class*="colorModeToggle"] svg,
+[data-theme='dark'] .navbar__item button[class*="colorModeToggle"] svg,
+[data-theme='dark'] .navbar__item .clean-btn[aria-label*="Switch"] svg,
+[data-theme='dark'] .navbar__item .clean-btn[title*="Switch"] svg,
+[data-theme='dark'] .navbar__items--right [class*="colorModeToggle"] button svg,
+[data-theme='dark'] .navbar__items--right [class*="toggle"] button svg {
+  color: #ffffff !important;
+  fill: #ffffff !important;
+}
+
+[data-theme='dark'] .navbar__item .navbar__link[class*="colorModeToggle"]:hover svg,
+[data-theme='dark'] .navbar__item button[class*="colorModeToggle"]:hover svg,
+[data-theme='dark'] .navbar__item .clean-btn[aria-label*="Switch"]:hover svg,
+[data-theme='dark'] .navbar__item .clean-btn[title*="Switch"]:hover svg,
+[data-theme='dark'] .navbar__items--right [class*="colorModeToggle"] button:hover svg,
+[data-theme='dark'] .navbar__items--right [class*="toggle"] button:hover svg {
+  color: #ffffff !important;
+  fill: #ffffff !important;
+}
+
+/* Ensure toggle looks the same in both themes */
+[data-theme='dark'] .navbar {
+  background-color: var(--sv-navy-blue) !important;
+  border-bottom: 2px solid var(--sv-orange);
+}
+
+[data-theme='dark'] .navbar__brand,
+[data-theme='dark'] .navbar__title,
+[data-theme='dark'] .navbar__item .navbar__link {
+  color: #ffffff !important;
+}
+
+[data-theme='dark'] .navbar__item .navbar__link:hover,
+[data-theme='dark'] .navbar__item .navbar__link--active {
+  color: var(--sv-orange) !important;
+}
+
+[data-theme='dark'] .navbar__item svg,
+[data-theme='dark'] .navbar__item .navbar__link svg,
+[data-theme='dark'] .navbar svg {
+  color: #ffffff !important;
+  fill: #ffffff !important;
+}
+
+[data-theme='dark'] .navbar__item svg:hover,
+[data-theme='dark'] .navbar__item .navbar__link:hover svg {
+  color: var(--sv-orange) !important;
+  fill: var(--sv-orange) !important;
+}
+
+[data-theme='dark'] .react-toggle-track-check,
+[data-theme='dark'] .react-toggle-track-x {
+  color: #ffffff !important;
+}
+
+/* Dark mode theme toggle - same styling */
+[data-theme='dark'] .react-toggle .react-toggle-track {
+  background-color: rgba(255, 255, 255, 0.3) !important;
+  border: 1px solid rgba(255, 255, 255, 0.5) !important;
+}
+
+[data-theme='dark'] .react-toggle .react-toggle-thumb {
+  background-color: #ffffff !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) !important;
+}
+
+[data-theme='dark'] .react-toggle:hover .react-toggle-track {
+  background-color: rgba(244, 125, 39, 0.4) !important;
+  border-color: var(--sv-orange) !important;
+}
+
+[data-theme='dark'] .react-toggle--checked .react-toggle-track {
+  background-color: var(--sv-orange) !important;
+  border-color: var(--sv-orange) !important;
+}
+
+[data-theme='dark'] .react-toggle--checked .react-toggle-thumb {
+  background-color: #ffffff !important;
+}
+
+/* Custom hero banner styling */
+.hero--primary {
+  --ifm-hero-background-color: var(--sv-navy-blue);
+  --ifm-hero-text-color: #ffffff;
+  background: linear-gradient(135deg, var(--sv-navy-blue) 0%, var(--sv-dark-navy) 100%);
+  color: #ffffff !important;
+}
+
+/* Ensure all hero elements are white */
+.hero--primary .hero__title {
+  color: #ffffff !important;
+}
+
+.hero--primary .hero__subtitle {
+  color: #ffffff !important;
+  opacity: 0.9;
+}
+
+.hero--primary h1,
+.hero--primary h2,
+.hero--primary h3,
+.hero--primary p {
+  color: #ffffff !important;
+}
+
+[data-theme='dark'] .hero--primary {
+  --ifm-hero-background-color: var(--sv-navy-blue);
+  background: linear-gradient(135deg, #1a202c 0%, var(--sv-navy-blue) 100%);
+  color: #ffffff !important;
+}
+
+[data-theme='dark'] .hero--primary .hero__title,
+[data-theme='dark'] .hero--primary .hero__subtitle,
+[data-theme='dark'] .hero--primary h1,
+[data-theme='dark'] .hero--primary h2,
+[data-theme='dark'] .hero--primary h3,
+[data-theme='dark'] .hero--primary p {
+  color: #ffffff !important;
+}
+
+/* Button styling */
+.button--secondary {
+  --ifm-button-background-color: var(--sv-orange);
+  --ifm-button-border-color: var(--sv-orange);
+  --ifm-button-color: #ffffff;
+}
+
+.button--secondary:hover {
+  --ifm-button-background-color: var(--sv-orange-dark);
+  --ifm-button-border-color: var(--sv-orange-dark);
+}
+
+.button--primary {
+  --ifm-button-background-color: var(--sv-orange);
+  --ifm-button-border-color: var(--sv-orange);
+  --ifm-button-color: #ffffff;
+}
+
+.button--primary:hover {
+  --ifm-button-background-color: var(--sv-orange-light);
+  --ifm-button-border-color: var(--sv-orange-light);
+}
+
+/* Card styling improvements */
+.card {
+  border: 1px solid var(--ifm-color-emphasis-200);
+  transition: all 0.2s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+}
+
+[data-theme='dark'] .card:hover {
+  box-shadow: 0 8px 30px rgba(244, 125, 39, 0.2);
+}
+
+/* Ensure proper contrast for links */
+.card__title--link {
+  color: var(--ifm-heading-color);
+  text-decoration: none;
+}
+
+.card__title--link:hover {
+  color: var(--ifm-color-primary);
+  text-decoration: none;
+}
+
+/* Additional text contrast improvements */
+p {
+  color: var(--ifm-font-color-base);
+}
+
+.card__body p {
+  color: var(--ifm-font-color-base);
+  line-height: 1.6;
+}
+
+/* Feature section text styling */
+.text--center p {
+  color: var(--ifm-font-color-base);
+  font-weight: 400;
+}
+
+/* Ensure headings have proper contrast */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--ifm-heading-color);
+}
+
+/* VS Code/Cursor-style JSON Code Block Styling */
+/* JSON Code block container */
+.prism-code[class*="language-json"],
+pre[class*="language-json"],
+code[class*="language-json"] {
+  background: var(--json-bg) !important;
+  color: var(--json-text) !important;
+  font-family: 'Cascadia Code', 'Fira Code', 'SF Mono', Monaco, 'Cascadia Mono', 'Roboto Mono', Consolas, 'Courier New', monospace !important;
+  font-size: 14px !important;
+  line-height: 1.5 !important;
+  border-radius: 6px !important;
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+}
+
+[data-theme='dark'] .prism-code[class*="language-json"],
+[data-theme='dark'] pre[class*="language-json"],
+[data-theme='dark'] code[class*="language-json"] {
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+/* JSON syntax highlighting */
+.token.string {
+  color: var(--json-string) !important;
+}
+
+.token.number {
+  color: var(--json-number) !important;
+}
+
+.token.boolean {
+  color: var(--json-boolean) !important;
+}
+
+.token.null {
+  color: var(--json-null) !important;
+}
+
+.token.property {
+  color: var(--json-key) !important;
+}
+
+.token.punctuation {
+  color: var(--json-punctuation) !important;
+}
+
+/* Specific JSON property styling */
+.language-json .token.property {
+  color: var(--json-key) !important;
+  font-weight: 400 !important;
+}
+
+.language-json .token.string {
+  color: var(--json-string) !important;
+}
+
+.language-json .token.number {
+  color: var(--json-number) !important;
+  font-weight: 400 !important;
+}
+
+.language-json .token.boolean,
+.language-json .token.null {
+  color: var(--json-boolean) !important;
+  font-weight: 500 !important;
+}
+
+.language-json .token.punctuation {
+  color: var(--json-punctuation) !important;
+}
+
+/* Brackets and braces */
+.language-json .token.punctuation.bracket,
+.language-json .token.punctuation.brace {
+  color: var(--json-punctuation) !important;
+  font-weight: 400 !important;
+}
+
+/* Inline code styling */
+code {
+  background-color: rgba(175, 184, 193, 0.2) !important;
+  color: var(--ifm-color-primary) !important;
+  border-radius: 3px !important;
+  padding: 0.2rem 0.4rem !important;
+  font-size: 85% !important;
+}
+
+[data-theme='dark'] code {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  color: var(--json-string) !important;
+}
+
+/* Code block line numbers */
+.prism-code .token-line {
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
+/* Highlighted lines in code blocks */
+.docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+  display: block !important;
+  margin: 0 calc(-1 * var(--ifm-pre-padding)) !important;
+  padding: 0 var(--ifm-pre-padding) !important;
+}
+
+[data-theme='dark'] .docusaurus-highlight-code-line {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}

@@ -1,0 +1,8 @@
+{
+    "label": "Check Matches",
+    "position": 3,
+    "link": {
+        "type": "generated-index",
+        "description": "The Credentialing API's Check Matches endpoint enables clients to request employee or entity data. The custom_id is needed when retrieving the requested data."
+    }
+}

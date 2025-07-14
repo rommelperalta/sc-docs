@@ -1,0 +1,24 @@
+import CodeBlock from '@theme/CodeBlock';
+import Schema from "@site/static/schemas/check-matches.json";
+import JSONSchemaViewer from "@theme/JSONSchemaViewer";
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+
+# JSON Request Schema 
+This section is for JSON Request Schema of [**Check Matches**](./create-employees.md).
+
+:::note Notes
+- Know more about `certification_state` and `alt_certification_state` usage **[here](./certification-states.mdx)**.
+- Know more about `certification_board` and `alt_certification_board` usage **[here](./certification-board-registries.mdx)**.
+- Know more about `license_type` usage **[here](./license-types.mdx)**.
+:::
+
+<Tabs>
+  <TabItem value="viewer" label="Viewer" default>
+    <JSONSchemaViewer schema={ Schema } />
+  </TabItem>
+  <TabItem value="schema" label="Schema">
+    <CodeBlock language="schema">{JSON.stringify(Schema, null, 2)}</CodeBlock>
+  </TabItem>
+</Tabs>

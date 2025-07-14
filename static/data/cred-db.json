@@ -1,0 +1,542 @@
+[
+  {
+    "name" : "aacn",
+    "registry_description" : "(AACN) American Association of Critical Care Nurses",
+    "required_fields" : "certification_number",
+    "disabled_fields" : ""
+  },
+  {
+    "name" : "aaet",
+    "registry_description" : "(AAET) American Association of Electrodiagnostic Technologists",
+    "required_fields" : "certification_number",
+    "disabled_fields" : ""
+  },
+  {
+    "name" : "aahncr",
+    "registry_description" : "(AAHNCR) American Allied Health National Certification and Registration",
+    "required_fields" : "certification_number",
+    "disabled_fields" : ""
+  },
+  {
+    "name" : "aama",
+    "registry_description" : "(AAMA) American Association of Medical Assistants",
+    "required_fields" : "certification_number",
+    "disabled_fields" : "certification_state"
+  },
+  {
+    "name" : "aapc",
+    "registry_description" : "(AAPC) American Academy of Professional Coders",
+    "required_fields" : "certification_number",
+    "disabled_fields" : ""
+  },
+  {
+    "name" : "aba",
+    "registry_description" : "(ABA) American Board of Anesthesiology",
+    "required_fields" : "",
+    "disabled_fields" : "certification_number"
+  },
+  {
+    "name" : "abai",
+    "registry_description" : "(ABAI) American Board of Allergy and Immunology",
+    "required_fields" : "",
+    "disabled_fields" : "certification_number"
+  },
+  {
+    "name" : "abcop",
+    "registry_description" : "(ABCOP) American Board for Certification",
+    "required_fields" : "certification_number",
+    "disabled_fields" : ""
+  },
+  {
+    "name" : "abcrs",
+    "registry_description" : "(ABCRS) American Board of Colon and Rectal Surgery",
+    "required_fields" : "",
+    "disabled_fields" : "certification_number"
+  },
+  {
+    "name" : "abfas",
+    "registry_description" : "(ABFAS) American Board of Foot and Ankle Surgery",
+    "required_fields" : "",
+    "disabled_fields" : "certification_number"
+  },
+  {
+    "name" : "abfm",
+    "registry_description" : "(ABFM) American Board of Family Medicine",
+    "required_fields" : "date_of_birth, social_security_num",
+    "disabled_fields" : "certification_number"
+  },
+  {
+    "name" : "abha",
+    "registry_description" : "(ABHA) National Healthcareer Association",
+    "required_fields" : "certification_number, certification_state",
+    "disabled_fields" : ""
+  },
+  {
+    "name" : "abim",
+    "registry_description" : "(ABIM) American Board of Internal Medicine",
+    "required_fields" : "certification_number",
+    "disabled_fields" : ""
+  },
+  {
+    "name" : "abms",
+    "registry_description" : "(ABMS) American Board of Medical Specialties",
+    "required_fields" : "certification_number",
+    "disabled_fields" : ""
+  },
+  {
+    "name" : "abns",
+    "registry_description" : "(ABNS) American Board of Neurological Surgery",
+    "required_fields" : "",
+    "disabled_fields" : "certification_number"
+  },
+  {
+    "name" : "abo",
+    "registry_description" : "(ABO) American Board of Optometry",
+    "required_fields" : "",
+    "disabled_fields" : "certification_number, certification_state"
+  },
+  {
+    "name" : "abog",
+    "registry_description" : "(ABOG) American Board of Obstetrics & Gynecology",
+    "required_fields" : "certification_number",
+    "disabled_fields" : ""
+  },
+  {
+    "name" : "abop",
+    "registry_description" : "(ABOP) American Board of Ophthalmology",
+    "required_fields" : "",
+    "disabled_fields" : "certification_number"
+  },
+  {
+    "name" : "abos",
+    "registry_description" : "(ABOS) American Board of Orthopaedic Surgery",
+    "required_fields" : "",
+    "disabled_fields" : "certification_number"
+  },
+  {
+    "name" : "aboto",
+    "registry_description" : "(ABOTO) American Board of Otolaryngology",
+    "required_fields" : "certification_number",
+    "disabled_fields" : ""
+  },
+  {
+    "name" : "abp",
+    "registry_description" : "(ABP) American Board of Pediatrics",
+    "required_fields" : "certification_number",
+    "disabled_fields" : ""
+  },
+  {
+    "name" : "abplm",
+    "registry_description" : "(ABPLM) American Board of Post Acute and Long-Term Medicine",
+    "required_fields" : "",
+    "disabled_fields" : ""
+  },
+  {
+    "name" : "abpm",
+    "registry_description" : "(ABPM) American Board of Preventive Medicine",
+    "required_fields" : "certification_number",
+    "disabled_fields" : ""
+  },
+  {
+    "name" : "abpmed",
+    "registry_description" : "(ABPMED) American Board of Podiatric Surgery",
+    "required_fields" : "",
+    "disabled_fields" : "certification_number"
+  },
+  {
+    "name" : "abpmr",
+    "registry_description" : "(ABPMR) American Board of Physical Medicine and Rehabilitation",
+    "required_fields" : "",
+    "disabled_fields" : "certification_number"
+  },
+  {
+    "name" : "abpn",
+    "registry_description" : "(ABPN) American Board of Psychiatric and Neurology",
+    "required_fields" : "certification_number",
+    "disabled_fields" : ""
+  },
+  {
+    "name" : "abps",
+    "registry_description" : "(ABPS) American Board of Plastic Surgery",
+    "required_fields" : "",
+    "disabled_fields" : "certification_number"
+  },
+  {
+    "name" : "abr",
+    "registry_description" : "(ABR) American Board of Radiology",
+    "required_fields" : "",
+    "disabled_fields" : "certification_number"
+  },
+  {
+    "name" : "abret",
+    "registry_description" : "(ABRET) Neurodiagnostic Credentialing and Accreditation",
+    "required_fields" : "certification_number",
+    "disabled_fields" : ""
+  },
+  {
+    "name" : "absm",
+    "registry_description" : "(ABSM) American Board of Sleep Medicine",
+    "required_fields" : "",
+    "disabled_fields" : "certification_number"
+  },
+  {
+    "name" : "absurgery",
+    "registry_description" : "(ABSURGERY) American Board of Surgery",
+    "required_fields" : "certification_number",
+    "disabled_fields" : ""
+  },
+  {
+    "name" : "abu",
+    "registry_description" : "(ABU) American Board of Urology",
+    "required_fields" : "",
+    "disabled_fields" : "certification_number"
+  },
+  {
+    "name" : "abvm",
+    "registry_description" : "(ABVM) American Board of Vascular Medicine",
+    "required_fields" : "",
+    "disabled_fields" : ""
+  },
+  {
+    "name" : "action",
+    "registry_description" : "(ACTION) Action Personal Trainer Certification",
+    "required_fields" : "certification_number",
+    "disabled_fields" : ""
+  },
+  {
+    "name" : "ahima",
+    "registry_description" : "(AHIMA) American Health Information Management Association",
+    "required_fields" : "certification_number",
+    "disabled_fields" : ""
+  },
+  {
+    "name" : "amalpp",
+    "registry_description" : "(AMALPP) Academy of Lactation Policy and Practice",
+    "required_fields" : "certification_number",
+    "disabled_fields" : ""
+  },
+  {
+    "name" : "ambd",
+    "registry_description" : "(AMBD) American Board of Dermatology",
+    "required_fields" : "",
+    "disabled_fields" : "certification_number"
+  },
+  {
+    "name" : "ambem",
+    "registry_description" : "(AMBEM) American Board of Emergency Medicine",
+    "required_fields" : "certification_number, date_of_birth",
+    "disabled_fields" : ""
+  },
+  {
+    "name" : "ambo",
+    "registry_description" : "(AMBO) American Board of Orthodontics",
+    "required_fields" : "",
+    "disabled_fields" : "certification_number, certification_state"
+  },
+  {
+    "name" : "ambom",
+    "registry_description" : "(AMBOM) American Board of Oral Medicine",
+    "required_fields" : "certification_number",
+    "disabled_fields" : "certification_state"
+  },
+  {
+    "name" : "ambp",
+    "registry_description" : "(AMBP) American Board of Prosthodontics",
+    "required_fields" : "",
+    "disabled_fields" : "certification_number, certification_state"
+  },
+  {
+    "name" : "ambpd",
+    "registry_description" : "(AMBPD) American Board of Pediatric Dentistry",
+    "required_fields" : "",
+    "disabled_fields" : "certification_state"
+  },
+  {
+    "name" : "ambperio",
+    "registry_description" : "(AMBPERIO) The American Board of Periodontology",
+    "required_fields" : "",
+    "disabled_fields" : "certification_state"
+  },
+  {
+    "name" : "ambpm",
+    "registry_description" : "(AMBPM) American Board of Pain Medicine",
+    "required_fields" : "",
+    "disabled_fields" : "certification_number"
+  },
+  {
+    "name" : "amcb",
+    "registry_description" : "(AMCB) American Midwifery Certification Board",
+    "required_fields" : "certification_number",
+    "disabled_fields" : ""
+  },
+  {
+    "name" : "amcci",
+    "registry_description" : "(AMCCI) Cardiovascular Credentialing International",
+    "required_fields" : "certification_number",
+    "disabled_fields" : ""
+  },
+  {
+    "name" : "amend",
+    "registry_description" : "(AMEND) American Board of Endodontics",
+    "required_fields" : "",
+    "disabled_fields" : "certification_state"
+  },
+  {
+    "name" : "amha",
+    "registry_description" : "(AMHA) American Heart Association CPR & ECC",
+    "required_fields" : "certification_number",
+    "disabled_fields" : "certification_state"
+  },
+  {
+    "name" : "ammdcb",
+    "registry_description" : "(AMMDCB) Medical Dosimetrist Certification Board",
+    "required_fields" : "certification_number",
+    "disabled_fields" : ""
+  },
+  {
+    "name" : "amnasm",
+    "registry_description" : "(AMNASM) National Academy of Sports Medicine",
+    "required_fields" : "certification_number",
+    "disabled_fields" : ""
+  },
+  {
+    "name" : "amncctinc",
+    "registry_description" : "(AMNCCTINC) National Center for Competency Testing",
+    "required_fields" : "certification_number",
+    "disabled_fields" : ""
+  },
+  {
+    "name" : "amnmtcb",
+    "registry_description" : "(AMNMTCB) Nuclear Medicine Tech Certified Board",
+    "required_fields" : "",
+    "disabled_fields" : "certification_number"
+  },
+  {
+    "name" : "amnncc",
+    "registry_description" : "(AMNNCC) Nephrology Nursing Certification Commission",
+    "required_fields" : "",
+    "disabled_fields" : "certification_number"
+  },
+  {
+    "name" : "amrdms",
+    "registry_description" : "American Registry for Diagnostic Medical Sonography",
+    "required_fields" : "certification_number",
+    "disabled_fields" : "certification_state"
+  },
+  {
+    "name" : "amredc",
+    "registry_description" : "(AMREDC) American Red Cross Training Services",
+    "required_fields" : "certification_number",
+    "disabled_fields" : ""
+  },
+  {
+    "name" : "amrrt",
+    "registry_description" : "(AMRRT) American Registry of Radiologic Technologists",
+    "required_fields" : "certification_number",
+    "disabled_fields" : ""
+  },
+  {
+    "name" : "amtech",
+    "registry_description" : "(AMTECH) American Medical Technologists",
+    "required_fields" : "certification_number",
+    "disabled_fields" : ""
+  },
+  {
+    "name" : "anrp",
+    "registry_description" : "(ANRP) American Neonatal Resuscitation Program",
+    "required_fields" : "certification_code",
+    "disabled_fields" : ""
+  },
+  {
+    "name" : "asha",
+    "registry_description" : "(ASHA) ASHA Certification and Ethics Verification",
+    "required_fields" : "certification_number",
+    "disabled_fields" : ""
+  },
+  {
+    "name" : "atcb",
+    "registry_description" : "(ATCB) Art Therapy Credentials Board",
+    "required_fields" : "certification_number",
+    "disabled_fields" : ""
+  },
+  {
+    "name" : "bacb",
+    "registry_description" : "(BACB) Behavior Analyst Certification Board",
+    "required_fields" : "certification_number",
+    "disabled_fields" : ""
+  },
+  {
+    "name" : "bocat",
+    "registry_description" : "(BOCAT) Board of Certification for the Athletic Trainer",
+    "required_fields" : "certification_number",
+    "disabled_fields" : ""
+  },
+  {
+    "name" : "bocusa",
+    "registry_description" : "(BOCUSA) Board of Certification/Accreditation",
+    "required_fields" : "certification_number",
+    "disabled_fields" : ""
+  },
+  {
+    "name" : "bps",
+    "registry_description" : "(BPS) Board of Pharmacy Specialties",
+    "required_fields" : "certification_number",
+    "disabled_fields" : ""
+  },
+  {
+    "name" : "brpt",
+    "registry_description" : "(BRPT) Board of Registered Polysomnographic Technologists",
+    "required_fields" : "certification_number",
+    "disabled_fields" : "certification_state"
+  },
+  {
+    "name" : "cbdce",
+    "registry_description" : "(CBDCE) Certification Board for Diabetes Care and Education",
+    "required_fields" : "certification_number",
+    "disabled_fields" : ""
+  },
+  {
+    "name" : "cbmt",
+    "registry_description" : "(CBMT) Certification Board for Music Therapists",
+    "required_fields" : "certification_number",
+    "disabled_fields" : "certification_state"
+  },
+  {
+    "name" : "ccmc",
+    "registry_description" : "(CCMC) Commission for Case Manager Certification",
+    "required_fields" : "",
+    "disabled_fields" : "certification_number, certification_state"
+  },
+  {
+    "name" : "cdr",
+    "registry_description" : "(CDR) Commission on Diatetic Registration",
+    "required_fields" : "certification_number, certification_state",
+    "disabled_fields" : ""
+  },
+  {
+    "name" : "hpcc",
+    "registry_description" : "(HPCC) Hospice & Palliative Credentialing Center",
+    "required_fields" : "certification_number",
+    "disabled_fields" : ""
+  },
+  {
+    "name" : "hspa",
+    "registry_description" : "(HSPA) Healthcare Sterile Processing Association",
+    "required_fields" : "certification_number",
+    "disabled_fields" : ""
+  },
+  {
+    "name" : "iblce",
+    "registry_description" : "(IBLCE) International Board of Lactation Consultant Examiners",
+    "required_fields" : "certification_number",
+    "disabled_fields" : ""
+  },
+  {
+    "name" : "naham",
+    "registry_description" : "(NAHAM) National Association of Healthcare Access Management",
+    "required_fields" : "certification_number",
+    "disabled_fields" : ""
+  },
+  {
+    "name" : "nahwa",
+    "registry_description" : "(NAHWA) The National Healthcare Workers Association",
+    "required_fields" : "certification_number",
+    "disabled_fields" : ""
+  },
+  {
+    "name" : "nbcc",
+    "registry_description" : "(NBCC) National Board for Certified Counselors",
+    "required_fields" : "certification_number",
+    "disabled_fields" : "certification_state"
+  },
+  {
+    "name" : "nbcot",
+    "registry_description" : "(NBCOT) National Board for Certification in Occupational Therapy",
+    "required_fields" : "certification_number",
+    "disabled_fields" : ""
+  },
+  {
+    "name" : "nbcrna",
+    "registry_description" : "(NBCRNA) National Board of Certification and Recertification for Nurse Anesthetists",
+    "required_fields" : "certification_number",
+    "disabled_fields" : ""
+  },
+  {
+    "name" : "nbrc",
+    "registry_description" : "(NBRC) The National Board for Respiratory Care",
+    "required_fields" : "",
+    "disabled_fields" : "certification_number"
+  },
+  {
+    "name" : "nbstsa",
+    "registry_description" : "(NBSTSA) National Board of Surgical Technology and Surgical Assisting",
+    "required_fields" : "certification_number",
+    "disabled_fields" : ""
+  },
+  {
+    "name" : "nccaa",
+    "registry_description" : "(NCCAA) National Commission for Certification of Anesthesiologist Assistants",
+    "required_fields" : "certification_number",
+    "disabled_fields" : ""
+  },
+  {
+    "name" : "nccaom",
+    "registry_description" : "(NCCAOM) National Certification for Acupuncture and Oriental Medicine",
+    "required_fields" : "",
+    "disabled_fields" : "certification_number"
+  },
+  {
+    "name" : "nccpa",
+    "registry_description" : "(NCCPA) National Commission on Certification of Physician Assistants",
+    "required_fields" : "certification_number",
+    "disabled_fields" : ""
+  },
+  {
+    "name" : "nremt",
+    "registry_description" : "(NREMT) National Registry of Emergency Medical Technicians",
+    "required_fields" : "certification_number",
+    "disabled_fields" : ""
+  },
+  {
+    "name" : "oncc",
+    "registry_description" : "(ONCC) Oncology Nursing Certification Corporation",
+    "required_fields" : "certification_number",
+    "disabled_fields" : ""
+  },
+  {
+    "name" : "ptcb",
+    "registry_description" : "(PTCB) Pharmacy Technician Certification Board",
+    "required_fields" : "certification_number",
+    "disabled_fields" : ""
+  },
+  {
+    "name" : "ptcp",
+    "registry_description" : "(PTCP) PT Compact Privilege Verification",
+    "required_fields" : "certification_number, certification_state",
+    "disabled_fields" : ""
+  },
+  {
+    "name" : "qeeg",
+    "registry_description" : "QEEG Certification Board",
+    "required_fields" : "",
+    "disabled_fields" : ""
+  },
+  {
+    "name" : "resna",
+    "registry_description" : "(RESNA) Rehabilitation Engineering and Assistive Technology Society of North America",
+    "required_fields" : "",
+    "disabled_fields" : "certification_number"
+  },
+  {
+    "name" : "usreps",
+    "registry_description" : "(USREPS) US Registry of Exercise Professionals",
+    "required_fields" : "certification_number",
+    "disabled_fields" : ""
+  },
+  {
+    "name" : "vacb",
+    "registry_description" : "(VACB) Virginia Certification Board",
+    "required_fields" : "certification_number",
+    "disabled_fields" : ""
+  }
+]

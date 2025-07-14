@@ -1,0 +1,8 @@
+{
+  "label": "Resolve Matches",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "The Credentialing API's Resolve Matches endpoint allows clients to resolve matches from exclusions."
+  }
+}

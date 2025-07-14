@@ -1,0 +1,160 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "employees": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "facility_id": {
+                "type": "string"
+              },
+              "custom_id": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "custom_id"
+            ]
+          }
+        ]
+      }
+    },
+    "entities": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "facility_id": {
+            "type": "string"
+          },
+          "custom_id": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "custom_id"
+        ]
+      }
+    },
+    "include_fields": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["id", "profile_id"]
+      }
+    },
+    "with_image": {
+      "type": "boolean",
+      "oneOf": [
+        {
+          "type": "boolean",
+          "default": false
+        },
+        {
+          "type": "integer",
+          "enum": [0, 1],
+          "default": 0
+        }
+      ]
+    },
+    "include_exclusions": {
+      "type": "boolean",
+      "oneOf": [
+        {
+          "type": "boolean",
+          "default": true
+        },
+        {
+          "type": "integer",
+          "enum": [0, 1],
+          "default": 1
+        }
+      ]
+    },
+    "include_credentials": {
+      "type": "boolean",
+      "oneOf": [
+        {
+          "type": "boolean",
+          "default": true
+        },
+        {
+          "type": "integer",
+          "enum": [0, 1],
+          "default": 1
+        }
+      ]
+    },
+    "check_id": {
+      "type": "integer",
+      "maxLength": 10,
+      "minimum": 1,
+      "description": "Optional. For advanced usage, check_id can be added but is not required."
+    },
+    "employeelist_id": {
+      "type": "integer",
+      "maxLength": 10,
+      "minimum": 1,
+      "description": "Optional. For advanced usage, employeelist_id can be added but is not required."
+    }
+  },
+  "anyOf": [
+    {
+      "required": ["employees"]
+    },
+    {
+      "required": ["entities"]
+    }
+  ],
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "with_image": {"const": true}
+        }
+      },
+      "then": {
+        "properties": {
+          "employees": {"maxItems": 10},
+          "entities": {"maxItems": 10}
+        }
+      }
+    },
+    {
+      "if": {
+        "not": {
+          "properties": {
+            "with_image": {"const": true}
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "employees": {"maxItems": 100},
+          "entities": {"maxItems": 100}
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "employees": {"type": "array"},
+          "entities": {"type": "array"}
+        }
+      },
+      "then": {
+        "properties": {
+          "employees": {"maxItems": 100},
+          "entities": {"maxItems": 100}
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+.features {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.featureSvg {
+  height: 120px;
+  width: 120px;
+  color: #1a365d;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+}
+
+.featureSvg:hover {
+  color: #f47d27;
+  transform: scale(1.1);
+}
+
+/* Dark mode icon colors */
+[data-theme='dark'] .featureSvg {
+  color: #f47d27;
+}
+
+[data-theme='dark'] .featureSvg:hover {
+  color: #f68b42;
+  transform: scale(1.1);
+}

@@ -1,0 +1,8 @@
+{
+    "label": "License from NPI",
+    "position": 4,
+    "link": {
+        "type": "generated-index",
+        "description": "The License from NPI endpoint allows clients to retrieve detailed licensing information by querying with National Provider Identifier (NPI) numbers."
+    }
+}

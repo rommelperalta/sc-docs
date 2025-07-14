@@ -1,0 +1,18 @@
+import CodeBlock from '@theme/CodeBlock';
+import Schema from "@site/static/schemas/license-from-npi.json";
+import JSONSchemaViewer from "@theme/JSONSchemaViewer";
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+
+# JSON Request Schema 
+This section is for JSON Request Schema of [**License from NPI**](./request-npi-matches.md).
+
+<Tabs>
+  <TabItem value="viewer" label="Viewer" default>
+    <JSONSchemaViewer schema={ Schema } />
+  </TabItem>
+  <TabItem value="schema" label="Schema">
+    <CodeBlock language="schema">{JSON.stringify(Schema, null, 2)}</CodeBlock>
+  </TabItem>
+</Tabs>

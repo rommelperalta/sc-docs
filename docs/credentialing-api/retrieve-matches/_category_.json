@@ -1,0 +1,8 @@
+{
+    "label": "Retrieve Matches",
+    "position": 4,
+    "link": {
+        "type": "generated-index",
+        "description": "The Credentialing API's Retrieve Matches endpoint allows clients to access employee or entity data. A custom_id is required to retrieve the requested information."
+    }
+}

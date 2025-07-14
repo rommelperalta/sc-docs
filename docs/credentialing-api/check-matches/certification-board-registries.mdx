@@ -1,0 +1,15 @@
+---
+sidebar_position: 7
+---
+
+import CredDb from "@site/src/components/Docs/CredDb";
+
+# Certification Board Registries
+:::note
+- Please use **Registry** values for `certification_board`, and `alt_certification_board` in [**Request Body**](./create-employees.md#request-body) of [**Check Matches**](./create-employees.md) endpoint.
+- Please refer to the **Required Fields** and **Required Fields** values for each **Registry** for the input logic.
+- Other `certification_board` and `alt_certification_board` registries are independent, but most are dependent to other fields such as `certification_number`, `certification_state`, `date_of_birth`, `social_security_num`.
+- The `certification_board` is in higher priority than `alt_certification_board`.
+:::
+
+<CredDb />

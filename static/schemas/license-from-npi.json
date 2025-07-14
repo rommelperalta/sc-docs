@@ -1,0 +1,19 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "properties": {
+        "npi": {
+            "type": "array",
+            "items": {
+                "type": "string",
+                "pattern": "^[0-9]{10}$"
+            },
+            "description": "List of 10-digit NPI numbers."
+        }
+    },
+    "required": [
+        "npi"
+    ],
+    "maxProperties": 1000,
+    "additionalProperties": false
+}
